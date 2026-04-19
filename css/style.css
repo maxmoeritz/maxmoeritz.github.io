@@ -8,13 +8,13 @@ ul { list-style: none; }
 
 /* ── Tokens ── */
 :root {
-  --bg:       #F4EFE6;
+  --bg:       #c6bd83ff;
   --surface:  #eae7d0ff;
-  --border:   #DDD6C8;
+  --border:   #e3db97ff;
   --text:     #1C1917;
   --muted:    #78716C;
   --nav-h:    56px;
-  --max-w:    780px;
+  /*--max-w:    1100px; */
   --ease:     cubic-bezier(0.22, 1, 0.36, 1);
   --font-s:   'DM Sans', system-ui, sans-serif;
   --font-d:   'DM Serif Display', Georgia, serif;
