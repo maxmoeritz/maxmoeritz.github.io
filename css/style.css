@@ -199,7 +199,7 @@ body {
 /* ── Brewers ── */
 .brewers__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px 32px;
 }
 .brewer-card {
@@ -274,6 +274,14 @@ body {
   font-style: italic;
   flex-basis: 100%;
   margin-top: 4px;
+}
+
+.beer-card__sticker {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .beer-card__toggle {
@@ -419,6 +427,7 @@ body {
 /* brewer cards stagger */
 .brewers__grid .brewer-card:nth-child(2) { transition-delay: 0.1s; }
 .brewers__grid .brewer-card:nth-child(3) { transition-delay: 0.2s; }
+.brewers__grid .brewer-card:nth-child(4) { transition-delay: 0.3s; }
 
 /* beer cards stagger */
 .beers__list .beer-card:nth-child(2) { transition-delay: 0.08s; }
