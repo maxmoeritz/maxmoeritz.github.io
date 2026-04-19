@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryggeri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="assets/öl_mainlogo.svg" alt="Logo" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#brewers" data-i18n="nav.brewers">Bryggare</a></li>
+        <li><a href="#beers"   data-i18n="nav.beers">Öl</a></li>
+        <li><a href="#feedback" data-i18n="nav.feedback">Recensioner</a></li>
+      </ul>
+      <div class="nav__lang">
+        <button class="lang-btn active" data-lang="sv">SV</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <ul>
+        <li><a href="#brewers" data-i18n="nav.brewers">Bryggare</a></li>
+        <li><a href="#beers"   data-i18n="nav.beers">Öl</a></li>
+        <li><a href="#feedback" data-i18n="nav.feedback">Recensioner</a></li>
+      </ul>
+      <div class="nav__lang nav__lang--mobile">
+        <button class="lang-btn active" data-lang="sv">SV</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero" class="hero">
+    <div class="hero__inner">
+      <img src="assets/öl_mainlogo.svg" alt="Logo" class="hero__logo fade-in" />
+      <p class="hero__slogan fade-in" data-i18n="hero.slogan">
+        Välkommen till vårt öluniversum, njut av din vistelse!
+      </p>
+      <a href="#brewers" class="hero__cta fade-in" data-i18n="hero.cta">Utforska</a>
+    </div>
+    <div class="hero__scroll">↓</div>
+  </section>
+
+  <!-- ─── BREWERS ─── -->
+  <section id="brewers" class="section brewers">
+    <div class="container">
+      <h2 class="section__title fade-in" data-i18n="brewers.title">Våra Bryggare</h2>
+      <div class="brewers__grid">
+
+        <article class="brewer-card fade-in">
+          <div class="brewer-card__avatar"><div class="avatar-ph">EL</div></div>
+          <h3 data-i18n="brewers.1.name">Erik Lindström</h3>
+          <p class="brewer-card__role" data-i18n="brewers.1.role">Chefsbryggare</p>
+          <p class="brewer-card__bio" data-i18n="brewers.1.bio">
+            Erik har bryggt öl i över 15 år och specialiserar sig på nordiska smaker med lokala råvaror.
+          </p>
+        </article>
+
+        <article class="brewer-card fade-in">
+          <div class="brewer-card__avatar"><div class="avatar-ph">AH</div></div>
+          <h3 data-i18n="brewers.2.name">Astrid Hansson</h3>
+          <p class="brewer-card__role" data-i18n="brewers.2.role">Ölutvecklare</p>
+          <p class="brewer-card__bio" data-i18n="brewers.2.bio">
+            Astrid experimenterar med vilda jästkulturer och säsongsbetonade ingredienser från svenska skogar.
+          </p>
+        </article>
+
+        <article class="brewer-card fade-in">
+          <div class="brewer-card__avatar"><div class="avatar-ph">JB</div></div>
+          <h3 data-i18n="brewers.3.name">Jonas Berg</h3>
+          <p class="brewer-card__role" data-i18n="brewers.3.role">Kvalitetsansvarig</p>
+          <p class="brewer-card__bio" data-i18n="brewers.3.bio">
+            Jonas säkerställer att varje flaska möter våra höga standarder och förfinar recept baserade på smaktestning.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BEERS ─── -->
+  <section id="beers" class="section beers">
+    <div class="container">
+      <h2 class="section__title fade-in" data-i18n="beers.title">Våra Öl</h2>
+      <div class="beers__list">
+
+        <!-- Beer 1 -->
+        <article class="beer-card fade-in">
+          <div class="beer-card__main">
+            <div class="beer-card__info">
+              <h3 data-i18n="beers.1.name">Nordisk Pale Ale</h3>
+              <div class="beer-card__meta">
+                <span><span data-i18n="beers.label.alc">Alkohol</span>: <strong>5.2%</strong></span>
+                <span><span data-i18n="beers.label.bottled">Tappningsdatum</span>: <strong>2024-03-15</strong></span>
+                <span class="beer-card__taste" data-i18n="beers.1.taste">Fruktig, lätt bitter, citrusnyanser</span>
+              </div>
+            </div>
+            <button class="beer-card__toggle" data-i18n="beers.readMore">Läs mer</button>
+          </div>
+          <div class="beer-card__expanded">
+            <div class="beer-card__cols">
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.ingredients">Ingredienser</h4>
+                <p data-i18n="beers.1.ingredients">Pale malt, Centennial-humle, Cascade-humle, amerikansk ale-jäst, vatten</p>
+              </div>
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.brewing">Bryggsteg</h4>
+                <ol>
+                  <li data-i18n="beers.1.step1">Mäskning vid 67°C i 60 minuter</li>
+                  <li data-i18n="beers.1.step2">Kokning 60 minuter med humletillsatser</li>
+                  <li data-i18n="beers.1.step3">Jäsning vid 19°C i 7 dagar</li>
+                  <li data-i18n="beers.1.step4">Torrhumling 3 dagar</li>
+                  <li data-i18n="beers.1.step5">Lagring och tappning</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Beer 2 -->
+        <article class="beer-card fade-in">
+          <div class="beer-card__main">
+            <div class="beer-card__info">
+              <h3 data-i18n="beers.2.name">Midnattsstout</h3>
+              <div class="beer-card__meta">
+                <span><span data-i18n="beers.label.alc">Alkohol</span>: <strong>7.1%</strong></span>
+                <span><span data-i18n="beers.label.bottled">Tappningsdatum</span>: <strong>2024-01-22</strong></span>
+                <span class="beer-card__taste" data-i18n="beers.2.taste">Choklad, kaffe, röstad malt, len avslutning</span>
+              </div>
+            </div>
+            <button class="beer-card__toggle" data-i18n="beers.readMore">Läs mer</button>
+          </div>
+          <div class="beer-card__expanded">
+            <div class="beer-card__cols">
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.ingredients">Ingredienser</h4>
+                <p data-i18n="beers.2.ingredients">Rostad korn, chokladmalt, havre, Fuggles-humle, irländsk ale-jäst, vatten</p>
+              </div>
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.brewing">Bryggsteg</h4>
+                <ol>
+                  <li data-i18n="beers.2.step1">Mäskning vid 68°C i 75 minuter</li>
+                  <li data-i18n="beers.2.step2">Kokning 90 minuter</li>
+                  <li data-i18n="beers.2.step3">Kall jäsning vid 16°C i 10 dagar</li>
+                  <li data-i18n="beers.2.step4">Lagring 4 veckor vid 4°C</li>
+                  <li data-i18n="beers.2.step5">Handtappning i mörka flaskor</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Beer 3 -->
+        <article class="beer-card fade-in">
+          <div class="beer-card__main">
+            <div class="beer-card__info">
+              <h3 data-i18n="beers.3.name">Sommarljus Lager</h3>
+              <div class="beer-card__meta">
+                <span><span data-i18n="beers.label.alc">Alkohol</span>: <strong>4.5%</strong></span>
+                <span><span data-i18n="beers.label.bottled">Tappningsdatum</span>: <strong>2024-05-01</strong></span>
+                <span class="beer-card__taste" data-i18n="beers.3.taste">Ren, fräsch, lätt maltighet, torr avslutning</span>
+              </div>
+            </div>
+            <button class="beer-card__toggle" data-i18n="beers.readMore">Läs mer</button>
+          </div>
+          <div class="beer-card__expanded">
+            <div class="beer-card__cols">
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.ingredients">Ingredienser</h4>
+                <p data-i18n="beers.3.ingredients">Pilsnermalt, Saaz-humle, lager-jäst, mjukt vatten</p>
+              </div>
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.brewing">Bryggsteg</h4>
+                <ol>
+                  <li data-i18n="beers.3.step1">Stegmäskning: 50°C → 63°C → 72°C</li>
+                  <li data-i18n="beers.3.step2">Kokning 60 minuter</li>
+                  <li data-i18n="beers.3.step3">Primär jäsning vid 10°C i 14 dagar</li>
+                  <li data-i18n="beers.3.step4">Lagring vid 2°C i 4 veckor</li>
+                  <li data-i18n="beers.3.step5">Filtrering och tappning</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Beer 4 -->
+        <article class="beer-card fade-in">
+          <div class="beer-card__main">
+            <div class="beer-card__info">
+              <h3 data-i18n="beers.4.name">Björkdunge IPA</h3>
+              <div class="beer-card__meta">
+                <span><span data-i18n="beers.label.alc">Alkohol</span>: <strong>6.8%</strong></span>
+                <span><span data-i18n="beers.label.bottled">Tappningsdatum</span>: <strong>2024-04-10</strong></span>
+                <span class="beer-card__taste" data-i18n="beers.4.taste">Hartsig, tallbarr, tropisk frukt, kryddigt</span>
+              </div>
+            </div>
+            <button class="beer-card__toggle" data-i18n="beers.readMore">Läs mer</button>
+          </div>
+          <div class="beer-card__expanded">
+            <div class="beer-card__cols">
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.ingredients">Ingredienser</h4>
+                <p data-i18n="beers.4.ingredients">Crystal malt, Simcoe-humle, Mosaic-humle, björklöv, Vermont ale-jäst, vatten</p>
+              </div>
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.brewing">Bryggsteg</h4>
+                <ol>
+                  <li data-i18n="beers.4.step1">Mäskning vid 65°C för torr karaktär</li>
+                  <li data-i18n="beers.4.step2">Whirlpool-humling med björklöv</li>
+                  <li data-i18n="beers.4.step3">Jäsning vid 21°C i 5 dagar</li>
+                  <li data-i18n="beers.4.step4">Torrhumling dubbel omgång</li>
+                  <li data-i18n="beers.4.step5">Tappning ofiltrerat</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Beer 5 -->
+        <article class="beer-card fade-in">
+          <div class="beer-card__main">
+            <div class="beer-card__info">
+              <h3 data-i18n="beers.5.name">Vintervarm Porter</h3>
+              <div class="beer-card__meta">
+                <span><span data-i18n="beers.label.alc">Alkohol</span>: <strong>6.2%</strong></span>
+                <span><span data-i18n="beers.label.bottled">Tappningsdatum</span>: <strong>2023-11-30</strong></span>
+                <span class="beer-card__taste" data-i18n="beers.5.taste">Kanel, kardemumma, mörk kola, varm avslutning</span>
+              </div>
+            </div>
+            <button class="beer-card__toggle" data-i18n="beers.readMore">Läs mer</button>
+          </div>
+          <div class="beer-card__expanded">
+            <div class="beer-card__cols">
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.ingredients">Ingredienser</h4>
+                <p data-i18n="beers.5.ingredients">Brown malt, crystal 80, kanel, kardemumma, East Kent Goldings-humle, jäst, vatten</p>
+              </div>
+              <div class="beer-card__section">
+                <h4 data-i18n="beers.label.brewing">Bryggsteg</h4>
+                <ol>
+                  <li data-i18n="beers.5.step1">Mäskning vid 69°C för full kropp</li>
+                  <li data-i18n="beers.5.step2">Kokning med kryddor de sista 10 minuterna</li>
+                  <li data-i18n="beers.5.step3">Jäsning vid 18°C i 8 dagar</li>
+                  <li data-i18n="beers.5.step4">Konditionering med ytterligare kryddor</li>
+                  <li data-i18n="beers.5.step5">Lagring 6 veckor för integration</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEEDBACK ─── -->
+  <section id="feedback" class="section feedback">
+    <div class="container">
+      <h2 class="section__title fade-in" data-i18n="feedback.title">Vad Våra Gäster Säger</h2>
+      <div class="slider fade-in">
+        <div class="slider__track" id="sliderTrack">
+
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="slide__img">
+              <div class="img-ph"><span>Foto</span></div>
+            </div>
+            <blockquote class="slide__quote">
+              <p data-i18n="feedback.1.quote">
+                "Det bästa hantverksölet jag smakat – Björkdunge IPA är nu min absoluta favorit.
+                Komplexitet och fräschör i perfekt balans."
+              </p>
+              <footer><cite data-i18n="feedback.1.author">— Sara Eriksson, Stockholm</cite></footer>
+            </blockquote>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="slide__img">
+              <div class="img-ph"><span>Foto</span></div>
+            </div>
+            <blockquote class="slide__quote">
+              <p data-i18n="feedback.2.quote">
+                "Midnattsstout öppnade mina ögon för vad öl kan vara.
+                Djup, rund smak med en finhet som saknar motstycke i sin kategori."
+              </p>
+              <footer><cite data-i18n="feedback.2.author">— Marcus Lindberg, Göteborg</cite></footer>
+            </blockquote>
+          </div>
+
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn" id="sliderPrev" aria-label="Föregående">←</button>
+          <div class="slider__dots" id="sliderDots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+          </div>
+          <button class="slider__btn" id="sliderNext" aria-label="Nästa">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <img src="assets/öl_mainlogo.svg" alt="Logo" class="footer__logo" />
+      <p class="footer__copy" data-i18n="footer.copy">© 2024 Bryggeri. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
