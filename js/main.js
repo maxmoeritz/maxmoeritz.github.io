@@ -10,7 +10,7 @@ const T = {
     'brewers.title':          'Våra Bryggare',
     'brewers.1.name':         'Anton Kuusijärvi',
     'brewers.1.role':         'Chefsbryggare',
-    'brewers.1.bio':          'Anton har 5+ år inom ölbryggning. Som chefbryggare samordnar han bryggningar, håller koll på jäsprocessen och logistiken. Han tvekar inte att experimentera för i slutändan blir det ju alltig öl ändå.',
+    'brewers.1.bio':          'Anton har 5+ år inom ölbryggning. Som chefbryggare samordnar han bryggningar, håller koll på jäsprocessen och logistiken. Han tvekar inte att experimentera för i slutändan blir det ju alltid öl ändå.',
     'brewers.2.name':         'Anna Lindqvist',
     'brewers.2.role':         'Kvalitetsansvarig',
     'brewers.2.bio':          'Anna experimenterar med olika smaker och även icke-alkoholosika öl. Hon är en av de mest talade ölutvecklarena i Skedala, Halmstad.',
